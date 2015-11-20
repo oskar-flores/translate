@@ -1,0 +1,32 @@
+{
+  "restApiRoot": "/api",
+  "host": "0.0.0.0",
+  "port": 3000,
+  "remoting": {
+    "context": {
+      "enableHttpContext": false
+    },
+    "rest": {
+      "normalizeHttpPath": false,
+      "xml": false
+    },
+    "json": {
+      "strict": false,
+      "limit": "100kb"
+    },
+    "urlencoded": {
+      "extended": true,
+      "limit": "100kb"
+    },
+    "cors": false,
+    "errorHandler": {
+      "disableStackTrace": false
+    }
+  },
+  "legacyExplorer": false,
+  "client_secret": "7qcslUYzpwCkUDcC/0P1eoA/xuWbB9Tr8CZDkcJlNzo=",
+  "authClient": "xxxxxx-xxx-xxx",
+  "clientID":"SlackTraslator",
+  "scope":"http://api.microsofttranslator.com",
+  "grant_type":"client_credentials"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "translation",
+  "plural": "translations",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "spanishValue": {
+      "type": "string"
+    },
+    "englishValue": {
+      "type": "string"
+    },
+    "id": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
