@@ -3,7 +3,7 @@ const http_request = require('request');
 var text = "prueba"
 var authUrl = "http://api.microsofttranslator.com/v2/Http.svc/Translate?text=" + text + "&from=en&to=es";
 var client_id = "SlackTraslator";
-var client_secret = "7qcslUYzpwCkUDcC/0P1eoA/xuWbB9Tr8CZDkcJlNzo=";
+var client_secret = "xxxxxxx";
 var scope = "http://api.microsofttranslator.com";
 var grant_type = "client_credentials";
 var tokenUrl = 'https://datamarket.accesscontrol.windows.net/v2/OAuth2-13/';
@@ -37,10 +37,6 @@ function getToken (cache) {
                         }
                     }
                 });
-                      console.log ("En cache");
-     console.log (cache.get("access_token"));
-     console.log ("En global");
-     console.log (global.cache.get("access_token"));
             } else {
                 console.log("error : " + body.access_token)
             }
@@ -60,8 +56,8 @@ module.exports = function(options) {
             }
         }
     });
-    console.log(access_token);
     return function(req, res, next) {
+
         http_request.get({
                 url: authUrl,
                 'auth': {

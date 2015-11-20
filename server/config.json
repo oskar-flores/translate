@@ -24,7 +24,7 @@
     }
   },
   "legacyExplorer": false,
-  "client_secret": "7qcslUYzpwCkUDcC/0P1eoA/xuWbB9Tr8CZDkcJlNzo=",
+  "client_secret": "xxxxx",
   "authClient": "xxxxxx-xxx-xxx",
   "clientID":"SlackTraslator",
   "scope":"http://api.microsofttranslator.com",
